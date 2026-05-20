@@ -1,0 +1,259 @@
+/* Reckoning Ability Calculator stylesheet */
+
+html {
+	overflow-x: hidden;
+}
+
+@media (max-width: 1079px) {
+	html {
+		overflow-x: auto;
+	}
+}
+
+@media (max-width: 1023px) {
+	html {
+		overflow-x: hidden;
+	}
+}
+
+@media (max-width: 899px) {
+	html {
+		overflow-x: auto;
+	}
+
+	header#banner {
+		width: 905px !important;
+		height: 187px !important;
+		margin-bottom: 10px !important;
+		background-image: url('../wp-content/themes/koas/images/banner.png') !important;
+		background-size: auto auto !important;
+		background-position: 60% 50% !important;
+		border: none !important;
+	}
+	header#banner a#home-link {
+		width: 905px !important;
+		height: 187px !important;
+	}
+	header#banner #blog-title {
+		width: 211px !important;
+		height: 44px !important;
+		top: 64px !important;
+		left: 60% !important;
+		margin-left: -223px !important;
+	}
+	header#banner #blog-tagline {
+		width: 219px !important;
+		height: 42px !important;
+		top: 65px !important;
+		left: 60% !important;
+		margin-left: 7px !important;
+	}
+}
+
+article.writing {
+	width: 100% !important;
+}
+
+article.writing h1 {
+/*	display: none;*/
+	margin-bottom: -8px;
+	padding-bottom: 0;
+	font-size: 1.70rem;
+	text-align: center
+}
+
+#calc_body {
+	line-height: 100%;
+}
+
+#calc_body img {
+	margin:0;
+}
+
+#calc_body table {
+	display:table;
+	background: none;
+}
+
+#calc_body table td {
+	background: none;
+}
+
+.calc_tbe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+table.calc_tbe {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#calc_header {
+	width: 859px;
+	height: 46px;
+	padding-top: 12px;
+	margin: 0 auto;
+	color: #000;
+	text-align: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+table#calc_headertable td {
+	height: 46px;
+	cursor: pointer;
+}
+
+#calc_box {
+	width: 859px;
+	height: 543px;
+	margin: 0 auto;
+	background-image: url('images/common/borderbg.png');
+	background-repeat: no-repeat;
+}
+
+#calc_table {
+	width: 725px;
+	height: 525px;
+	float: left;
+	margin: 9px;
+}
+
+table#calc_abilitytree {
+	width: 725px;
+	height: 525px;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+/*table#calc_abilitytree tbody {
+	height: 100%;
+	max-height: 83px;
+}*/
+
+table#calc_abilitytree td {
+	position: relative;
+	width: 64px;
+	height: 64px;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 0;
+}
+
+.calc_hotspot {
+	width: 64px;
+	height: 64px;
+	margin: auto;
+}
+
+.calc_icon {
+	width: 64px;
+	height: 64px;
+	position: relative;
+	z-index: 100;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.calc_iconcounter {
+	width: 34px;
+	height: 22px;
+	position: absolute;
+	z-index: 16;
+	top: 50px;
+	left: 50px;
+	padding: 4px 0 0 0;
+	font-family: "Times New Roman";
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.calc_iconcounterbonus {
+	font-size: 19px;
+	color: #0ae;
+}
+
+.calc_iconcounterultimate {
+	color: #0ec;
+}
+
+.calc_iconcounter0 {
+	display: none;
+}
+
+.calc_iconcounter1 {
+	color: #00f800;
+}
+
+.calc_iconcounter2 {
+	color: #fefe00;
+}
+
+#calc_stats {
+	position: absolute;
+	width: 112px;
+	height: 525px;
+	margin: 9px 6px 9px 741px;
+}
+
+table#calc_abilitystats {	
+	width: 112px;
+	height: 525px;
+}
+
+table#calc_abilitystats td {
+	height: 0px;
+	color: white;
+	text-align: center;
+}
+
+p.calc_pgh {
+	margin-bottom: 10px;
+}
+
+p.calc_labsec {
+	margin-top: 20px;
+}
+
+
+img.calc_reset, img.calc_bonus {
+	cursor: pointer;
+	-o-transition: box-shadow .2s ease-in-out;
+	-moz-transition: box-shadow .2s ease-in-out;
+	-webkit-transition: box-shadow .2s ease-in-out;
+	transition: box-shadow .2s ease-in-out;
+}
+
+img.calc_reset:hover, img.calc_bonus:hover {
+	-o-transition: box-shadow .2s ease-in-out;
+	-moz-transition: box-shadow .2s ease-in-out;
+	-webkit-transition: box-shadow .2s ease-in-out;
+	transition: box-shadow .2s ease-in-out;
+}
+
+img.calc_reset:hover {
+	box-shadow: 0 0 8px 0px #f00 inset;
+}
+
+img.calc_bonus:hover {
+	box-shadow: 0 0 8px 0px #0ae inset;
+}
+
+#calc_mightbonuscounter, #calc_finessebonuscounter, #calc_sorcerybonuscounter {
+	font-weight: bold;
+	color: #0ae;
+}
+
+#calc_footer {
+	padding-top: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
