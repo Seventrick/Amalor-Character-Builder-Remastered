@@ -11,17 +11,17 @@ var finessebonuspoints = 0;
 var sorcerybonuspoints = 0;
 var levelrequired = 0;
 var mightbackground = new Image();
-mightbackground['src'] = 'https://' + window.location.origin + '/Amalor-Character-Builder-Remastered' + '/images/mighttree.png';
+mightbackground['src'] = 'https://' + window.location.origin + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mighttree.png';
 var finessebackground = new Image();
-finessebackground['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered' + '/KOAS_Calc/images/finessetree.png';
+finessebackground['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finessetree.png';
 var sorcerybackground = new Image();
-sorcerybackground['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered' + '/KOAS_Calc/images/sorcerytree.png';
+sorcerybackground['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorcerytree.png';
 var mightactive = new Image();
-mightactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered' + '/KOAS_Calc/images/mightactive.png';
+mightactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mightactive.png';
 var finesseactive = new Image();
-finesseactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered' + '/KOAS_Calc/images/finesseactive.png';
+finesseactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finesseactive.png';
 var sorceryactive = new Image();
-sorceryactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered' + '/KOAS_Calc/images/sorceryactive.png';
+sorceryactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png';
 var currenttree = 'might';
 
 
@@ -992,9 +992,9 @@ function Ability(_0xbee3x11, _0xbee3x12, _0xbee3x13, _0xbee3x14, _0xbee3x15, _0x
 	this['Prereq'] = _0xbee3x17;
 	this['Image'] = new Object();
 	this['Image']['On'] = new Image();
-	this['Image']['On']['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/' + _0xbee3x18 + '_on.png';
+	this['Image']['On']['src'] = 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/' + _0xbee3x18 + '_on.png';
 	this['Image']['Off'] = new Image();
-	this['Image']['Off']['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/' + _0xbee3x18 + '_off.png';
+	this['Image']['Off']['src'] = 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/' + _0xbee3x18 + '_off.png';
 	this['Description'] = _0xbee3x19;
 	this['RequiredBy'] = null;
 	this['Ranks'] = _0xbee3x1a;
@@ -1266,19 +1266,19 @@ function FillOutTree(_0xbee3x29, _0xbee3x1c) {
 	if (_0xbee3x1c == 0) {
 		if (currenttree == 'might') {
 			currenttree = 'finesse';
-			document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finesseactive.png")';
-			document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finessetree.png")';
+			document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finesseactive.png")';
+			document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finessetree.png")';
 			UpdateEligible(FinesseCollection, finessepoints);
 		} else {
 			if (currenttree == 'finesse') {
 				currenttree = 'sorcery';
-				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorceryactive.png")';
-				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorcerytree.png")';
+				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png")';
+				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorcerytree.png")';
 				UpdateEligible(SorceryCollection, sorcerypoints);
 			} else {
 				currenttree = 'might';
-				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mightactive.png")';
-				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mighttree.png")';
+				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mightactive.png")';
+				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mighttree.png")';
 				UpdateEligible(MightCollection, mightpoints);
 			};
 		};
@@ -1286,35 +1286,35 @@ function FillOutTree(_0xbee3x29, _0xbee3x1c) {
 		if (_0xbee3x1c == 1) {
 			if (currenttree == 'might') {
 				currenttree = 'sorcery';
-				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorceryactive.png")';
-				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorcerytree.png")';
+				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png")';
+				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorcerytree.png")';
 				UpdateEligible(SorceryCollection, sorcerypoints);
 			} else {
 				if (currenttree == 'finesse') {
 					currenttree = 'might';
-					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mightactive.png")';
-					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mighttree.png")';
+					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mightactive.png")';
+					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mighttree.png")';
 					UpdateEligible(MightCollection, mightpoints);
 				} else {
 					currenttree = 'finesse';
-					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finesseactive.png")';
-					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finessetree.png")';
+					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finesseactive.png")';
+					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finessetree.png")';
 					UpdateEligible(FinesseCollection, finessepoints);
 				};
 			};
 		} else {
 			if (currenttree == 'might') {
-				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mightactive.png")';
-				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/mighttree.png")';
+				document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mightactive.png")';
+				document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mighttree.png")';
 				UpdateEligible(MightCollection, mightpoints);
 			} else {
 				if (currenttree == 'finesse') {
-					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finesseactive.png")';
-					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/finessetree.png")';
+					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finesseactive.png")';
+					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finessetree.png")';
 					UpdateEligible(FinesseCollection, finessepoints);
 				} else {
-					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorceryactive.png")';
-					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/KOAS_Calc/images/sorcerytree.png")';
+					document['getElementById']('calc_headertable')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png")';
+					document['getElementById']('calc_abilitytree')['style']['background'] = 'url("' + 'http://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorcerytree.png")';
 					UpdateEligible(SorceryCollection, sorcerypoints);
 				};
 			};
