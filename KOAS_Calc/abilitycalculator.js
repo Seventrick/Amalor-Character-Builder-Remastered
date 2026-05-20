@@ -11,17 +11,17 @@ var finessebonuspoints = 0;
 var sorcerybonuspoints = 0;
 var levelrequired = 0;
 var mightbackground = new Image();
-mightbackground['src'] = 'http://' + window.location.origin  + '/KOAS_Calc/images/mighttree.png';
+mightbackground['src'] = 'https://' + window.location.origin  + '/KOAS_Calc/images/mighttree.png';
 var finessebackground = new Image();
-finessebackground['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/finessetree.png';
+finessebackground['src'] = 'https://' + document.location.host + '/KOAS_Calc/images/finessetree.png';
 var sorcerybackground = new Image();
-sorcerybackground['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/sorcerytree.png';
+sorcerybackground['src'] = 'https://' + document.location.host + '/KOAS_Calc/images/sorcerytree.png';
 var mightactive = new Image();
-mightactive['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/mightactive.png';
+mightactive['src'] = 'https://' + document.location.host + '/KOAS_Calc/images/mightactive.png';
 var finesseactive = new Image();
-finesseactive['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/finesseactive.png';
+finesseactive['src'] = 'https://' + document.location.host + '/KOAS_Calc/images/finesseactive.png';
 var sorceryactive = new Image();
-sorceryactive['src'] = 'http://' + document.location.host + '/KOAS_Calc/images/sorceryactive.png';
+sorceryactive['src'] = 'https://' + document.location.host + '/KOAS_Calc/images/sorceryactive.png';
 var currenttree = 'might';
 
 
