@@ -10,8 +10,9 @@ var mightbonuspoints = 0;
 var finessebonuspoints = 0;
 var sorcerybonuspoints = 0;
 var levelrequired = 0;
+var baselocation = window.location.origin + '/Amalor-Character-Builder-Remastered';
 var mightbackground = new Image();
-mightbackground['src'] = 'https://' + window.location.origin + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/mighttree.png';
+mightbackground['src'] = 'https://' + baselocation + '/KOAS_Calc/images/mighttree.png';
 var finessebackground = new Image();
 finessebackground['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finessetree.png';
 var sorcerybackground = new Image();
@@ -21,7 +22,7 @@ mightactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Bu
 var finesseactive = new Image();
 finesseactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/finesseactive.png';
 var sorceryactive = new Image();
-sorceryactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png';
+sorceryactive['src'] = 'https://' + document.location.host + '/Amalor-Character-Builder-Remastered/KOAS_Calc/images/sorceryactive.png';
 var currenttree = 'might';
 
 
